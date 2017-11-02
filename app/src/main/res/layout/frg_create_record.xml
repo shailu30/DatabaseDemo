@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="4dp"
+  android:orientation="vertical">
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|fill_horizontal"
+    android:text="Name"/>
+
+  <EditText
+    android:id="@+id/sName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|fill_horizontal"
+    android:text="Address"/>
+
+  <EditText
+    android:id="@+id/sAdd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="false"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|fill_horizontal"
+    android:text="Gender"/>
+
+  <RadioGroup
+    android:id="@+id/sGender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+      android:id="@+id/male"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:tag="Male"
+      android:text="Male"/>
+
+    <RadioButton
+      android:id="@+id/female"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:tag="FeMale"
+      android:text="FeMale"/>
+  </RadioGroup>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|fill_horizontal"
+    android:text="Phone Number"/>
+
+  <EditText
+    android:id="@+id/sPhone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/sCreate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="Create"/>
+
+    <Button
+      android:id="@+id/viewList"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="View List"/>
+  </LinearLayout>
+</LinearLayout>
